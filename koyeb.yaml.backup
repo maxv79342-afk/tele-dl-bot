@@ -1,0 +1,15 @@
+name: telegram-downloader-bot
+services:
+  - name: bot
+    type: web
+    ports:
+      - port: 8000
+        protocol: http
+    routes:
+      - path: /
+    env:
+      - key: TELEGRAM_BOT_TOKEN
+        value: "8137662462:AAGJ_u9tXdQjgR5YG9JxlO_kdVRj7sNENy4"
+      - key: PORT
+        value: "8000"
+    instance_type: free

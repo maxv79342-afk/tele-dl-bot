@@ -4,6 +4,9 @@ services:
     env: docker
     plan: free
     region: frankfurt
+    healthCheckPath: /
     envVars:
-      - key: BOT_TOKEN
-        sync: false # حتماً توکن را در پنل Render وارد کنید، اینجا ننویسید
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false  # مقدار را از داشبورد Render وارد کنید
+      - key: PORT
+        value: "8000"

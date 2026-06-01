@@ -5,7 +5,5 @@ services:
     plan: free
     region: frankfurt
     envVars:
-      - key: TELEGRAM_BOT_TOKEN
-        value: 8137662462:AAGJ_u9tXdQjgR5YG9JxlO_kdVRj7sNENy4
-      - key: PORT
-        value: 8000
+      - key: BOT_TOKEN
+        sync: false # حتماً توکن را در پنل Render وارد کنید، اینجا ننویسید
